@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+body {
+  font-family: 'Open Sans';
+  font-weight: 100;
+  display: flex;
+  overflow: hidden;
+}
+input {
+  ::-webkit-input-placeholder {
+     color: rgba(255,255,255,0.7);
+  }
+  ::-moz-placeholder {
+     color: rgba(255,255,255,0.7);  
+  }
+  :-ms-input-placeholder {  
+     color: rgba(255,255,255,0.7);  
+  }
+  &:focus {
+    outline: 0 transparent solid;
+    ::-webkit-input-placeholder {
+     color: rgba(0,0,0,0.7);
+    }
+    ::-moz-placeholder {
+       color: rgba(0,0,0,0.7);  
+    }
+    :-ms-input-placeholder {  
+       color: rgba(0,0,0,0.7);  
+    }
+  }
+}
+.hero {
+  //background: #222;
+  //box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  min-height: 10rem;
+  margin: auto;
+
+}
+.login-text {
+  //background: hsl(40,30,60);
+  //border-bottom: .5rem solid white;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 70%;
+  padding: .5rem;
+  text-align: center;
+  //text-shadow: 1px -1px 0 rgba(0,0,0,0.3);
+  .fa-stack-1x {
+    color: black;
+  }
+}
+.login-username {
+  width: 250px;
+  background: transparent;
+  border: 0 solid;
+  border-bottom: 1px solid rgba(white, .5);
+  color: white;
+  display: block;
+  margin: 20px;
+  padding: 5px;
+  transition: 200ms background ease-in;
+  &:focus {
+    background: white;
+    color: black;
+    transition: 200ms background ease-in;
+  }
+}
+.login-submit {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  background-size: 200% 100%;
+  border-radius: 40px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+  box-shadow: 0 5px 20px 0 rgba(124, 191, 51, 0.7);
+  overflow: hidden;
+  cursor: pointer;
+}
+.login-submit:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  box-shadow: none;
+}
+.login-submit:active {
+  background-position: 0 100%;
+}
+.btn {
+  width: 130px;
+margin: 0 auto;
+}
+[class*=underlay] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+.underlay-photo {
+  animation: hue-rotate 6s infinite;
+  background-image: url('yasai.png');
+  background-size: cover;
+  z-index: -1;
+}
+.underlay-black {
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}

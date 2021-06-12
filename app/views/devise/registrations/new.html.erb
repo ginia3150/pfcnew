@@ -1,0 +1,24 @@
+<section class="hero" id='account-page'>
+  <%= form_with model: @user, url: new_user_registration_path, local: true do |f|%>
+    <form class="login-form">
+      <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      </p>
+        <%= f.text_field :n_name, autofocus: true, class: "login-username", placeholder: "ニックネーム" %>
+        <%= f.email_field :email, class: "login-username", placeholder: "メールアドレス" %>
+        <%= f.password_field :password, autocomplete: "off", class: "login-username", placeholder: "パスワード(半角英数6文字以上)" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "login-username", placeholder: "パスワード(確認用)" %>
+        <%= f.number_field :height, autofocus: true, class: "login-username", placeholder: "身長" %>
+        <%= f.number_field :weight, autofocus: true, class: "login-username", placeholder: "体重" %>
+    </form>
+      <%= f.collection_select(:age_id, Age.all, :id, :name, {}, {class:"login-username", id:"user-age"}) %>
+      <div class="btn">
+        <%= f.submit "新規登録", class: "login-submit" %>
+      </div>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
+  <% end %>
+</section>

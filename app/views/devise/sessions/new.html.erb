@@ -1,0 +1,19 @@
+<section class="hero">
+  <%= form_with model: @user, url: user_session_path, local: true do |f|%>
+    <form class="login-form">
+      <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      </p>
+        <%= f.email_field :email, class: "login-username", placeholder: "メールアドレス" %>
+        <%= f.password_field :password, autocomplete: "off", class: "login-username", placeholder: "パスワード(半角英数6文字以上)" %>
+    </form>
+      <div class="btn">
+        <%= f.submit "ログイン", class: "login-submit" %>
+      </div>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
+  <% end %>
+</section>
