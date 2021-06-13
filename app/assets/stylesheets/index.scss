@@ -1,0 +1,19 @@
+body {
+  font-family: 'Open Sans';
+  font-weight: 100;
+  display: flex;
+  overflow: hidden;
+}
+[class*=underlay] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+.underlay-photo2 {
+  animation: hue-rotate 6s infinite;
+  background-image: url('yasai2.png');
+  background-size: cover;
+  z-index: -1;
+}
