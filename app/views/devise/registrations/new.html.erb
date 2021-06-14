@@ -1,5 +1,5 @@
-<section class="hero" id='account-page'>
-  <%= form_with model: @user, url: new_user_registration_path, local: true do |f|%>
+<div class="hero">
+  <%= form_with model: @user, url: user_registration_path, local: true do |f|%>
     <form class="login-form">
       <p class="login-text">
         <span class="fa-stack fa-lg">
@@ -21,4 +21,4 @@
     <div class="underlay-photo"></div>
     <div class="underlay-black"></div>
   <% end %>
-</section>
+</div>
