@@ -29,16 +29,13 @@ input {
     }
   }
 }
-.main-user {
-  width: 100vw;
-  height: 100vh;
-}
+
 .hero {
-  //background: #222;
-  //box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  background: rgba(34, 34, 34, 0.651);
+  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
   margin: 0 auto;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 250px;
 }
 .login-text {
@@ -113,12 +110,11 @@ margin: 0 auto;
   top: 0;
 }
 .underlay-photo {
-  animation: hue-rotate 6s infinite;
   background-image: url('yasai.png');
   background-size: cover;
   z-index: -1;
 }
 .underlay-black {
-  background: rgba(44, 44, 44, 0.678);
+  background: rgba(44, 44, 44, 0.63);
   z-index: -1;
 }
