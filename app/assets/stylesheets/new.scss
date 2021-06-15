@@ -1,7 +1,17 @@
 canvas { position: absolute; }
+
+
+.food {
+  background-color: rgba(114, 231, 192, 0.527);
+  width: 45vw;
+  padding: 1vh 2vw;
+  flex-direction: column;
+}
 .underlay-photo3 {
   animation: hue-rotate 6s infinite;
   background-image: url('yasai3.png');
   background-size: cover;
   z-index: -1;
 }
+
+
