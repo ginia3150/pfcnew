@@ -36,7 +36,7 @@ input {
   margin: 0 auto;
   position: absolute;
   top: 20px;
-  left: 250px;
+  left: 38vw;
 }
 .login-text {
   //background: hsl(40,30,60);
@@ -76,7 +76,7 @@ input {
   min-width: 1px;
   padding: .25rem;
   transition: 250ms background ease-in;
-  moz-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -89,7 +89,7 @@ input {
 }
 .login-submit:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;

@@ -2,23 +2,56 @@
 
 <div class="hero" id='account-page'>
 
-<label>
-      <input type="checkbox" id="cbA" value="A"/>
-      チェックボックスA
-    </label>
-    <label>
-      <input type="checkbox" id="cbB" value="B"/>
-      チェックボックスB
-    </label>
-    <label>
-      <input type="checkbox" id="cbC" value="C"/>
-      チェックボックスC
-    </label>
+<label><input type="checkbox" id="cbA" value="A"/> 肉類</label>
+<label><input type="checkbox" id="cbB" value="B"/> 魚介類</label>
+<label><input type="checkbox" id="cbC" value="C"/> 卵類</label>
+<label><input type="checkbox" id="cbD" value="D"/> 豆類</label>
+<label><input type="checkbox" id="cbE" value="E"/> 乳類</label>
+<label><input type="checkbox" id="cbF" value="F"/> 穀類</label>
+<label><input type="checkbox" id="cbG" value="G"/> 芋及び澱粉類</label>
+<br>
+<label><input type="checkbox" id="cbH" value="H"/> 果実類</label>
+<label><input type="checkbox" id="cbI" value="I"/> 種実類</label>
+<label><input type="checkbox" id="cbJ" value="J"/> きのこ類</label>
+<label><input type="checkbox" id="cbK" value="K"/> 藻類</label>
+<label><input type="checkbox" id="cbL" value="L"/> 野菜類</label>
+<label><input type="checkbox" id="cbM" value="M"/> 油脂類</label>
+<br>
+<label><input type="checkbox" id="cbN" value="N"/> 砂糖及び甘味類</label>
+<label><input type="checkbox" id="cbO" value="O"/> 菓子類</label>
+<label><input type="checkbox" id="cbP" value="P"/> 嗜好飲料類</label>
+<label><input type="checkbox" id="cbQ" value="Q"/> 調味料及び香辛料類</label>
+<br>
+<label><input type="checkbox" id="cbR" value="R"/> 調理済み流通食品</label>
+
+<p class="loga"></p>
+<p class="logb"></p>
+<p class="logc"></p>
+
+<script>
+  const cba = document.querySelector('#cbA');
+  cba.addEventListener('change', (event) => {
+    const value = event.target.checked;
+    const log = `${value}になりまいした`;
+    document.querySelector('.loga').innerHTML = log;
+  });
+  const cbb = document.querySelector('#cbB');
+  cbb.addEventListener('change', (event) => {
+    const value = event.target.checked;
+    const log = `${value}になりまいした`;
+    document.querySelector('.logb').innerHTML = log;
+  });
+  const cbc = document.querySelector('#cbC');
+  cbc.addEventListener('change', (event) => {
+    const value = event.target.checked;
+    const log = `${value}になりまいした`;
+    document.querySelector('.logc').innerHTML = log;
+  });
 
 
+  
 
-
-
+</script>
 
 
 
