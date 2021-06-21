@@ -1,215 +1,57 @@
 <div class="pulldown">
 
   <select class="mainselect" name="major_list">
-  <option class="foods" selected="selected">--食材の種類--</option>
-
-  <option class="meat">肉類</option>
-  <option class="seafood">魚介類</option>
-  <option class="egg">卵類</option>
-  <option class="beans">豆類</option>
-  <option class="milk">乳類</option>
-  <option class="grain">穀類</option>
-  <option class="potato">芋類及び澱粉類</option>
-  <option class="fruit">果実類</option>
-  <option class="nuts">種実類</option>
-  <option class="mushroom">キノコ類</option>
-  <option class="alga">藻類</option>
-  <option class="vegetable">野菜類</option>
-  <option class="oils">油脂類</option>
-  <option class="sugar">砂糖及び甘味類</option>
-  <option class="pastry">菓子類</option>
-  <option class="drink">嗜好飲料類</option>
-  <option class="seasoning">調味料及び香辛料類</option>
-  <option class="off-the-shelf">調理済み流通食品類</option>
-  
+    <option class="foods" selected="selected">--食材の種類--</option>
+      <%= render "foods" %>
   </select>
 
 
   
-  <select name="food_list">
+  <select name="food_list" id="food-select">
     <option class="foods" selected="food-selected">--食材選択--</option>
       <option class="meat" id="">--肉類--</option>
-        <option class="meat">猪肉</option>
-      <option class="meat">猪豚肉</option>
-      <option class="meat">兎肉</option>
-      <option class="meat">和牛 肩ロース(脂身付き 生)</option>
-      <option class="meat">和牛 肩ロース(赤肉)</option>
-      <option class="meat">和牛 リブロース(赤身)</option>
-      <option class="meat">和牛 リブロース(脂身付き)</option>
-      <option class="meat">和牛 サーロイン(脂身付き)</option>
-      <option class="meat">和牛 サーロイン(赤肉)</option>
-      <option class="meat">和牛 ばら肉(脂身付き)</option>
-      <option class="meat">和牛 腿肉(脂身付き)</option>
-      <option class="meat">和牛 腿肉(赤身)</option>
-      <option class="meat">和牛 外腿肉(脂身付き)</option>
-      <option class="meat">和牛 外腿肉(赤肉)</option>
-      <option class="meat">和牛 ランプ(脂身付き)</option>
-      <option class="meat">和牛 ランプ(赤肉)</option>
-      <option class="meat">和牛 ヒレ(赤肉)</option>
-      <option class="meat">乳用牛 肩(赤肉)</option>
-      <option class="meat">乳用牛 肩ロース(脂身付き)</option>
-      <option class="meat">乳用牛 肩ロース(赤肉)</option>
-      <option class="meat">乳用牛 リブロース(脂身付き)</option>
-      <option class="meat">乳用牛 リブロース(赤肉 )</option>
-      <option class="meat">乳用牛 サーロイン(脂身付き)</option>
-      <option class="meat">乳用牛 サーロイン(赤肉)</option>
-      <option class="meat">乳用牛 ばら肉(脂身付き)</option>
-      <option class="meat">乳用牛 腿肉(脂身付き)</option>
-      <option class="meat">乳用牛 外腿肉(脂身付き)</option>
-      <option class="meat">乳用牛 外腿肉(赤肉)</option>
-      <option class="meat">乳用牛 ランプ(脂身付き 生)</option>
-      <option class="meat">乳用牛 ランプ(赤肉)</option>
-      <option class="meat">乳用牛 ヒレ(赤肉)</option>
-      <option class="meat">交雑牛 リブロース(脂身付き)</option>
-      <option class="meat">交雑牛 リブロース(赤身)</option>
-      <option class="meat">交雑牛 ばら肉(脂身付き)</option>
-      <option class="meat">交雑牛 腿肉(脂身付き)</option>
-      <option class="meat">交雑牛 腿肉(赤肉)</option>
-      <option class="meat">交雑牛 ヒレ(赤肉)</option>
-      <option class="meat">輸入牛肉 肩ロース(脂身付き 生)</option>
-      <option class="meat">輸入牛肉 肩ロース(赤肉)</option>
-      <option class="meat">輸入牛肉 リブロース(脂身付き)</option>
-      <option class="meat">輸入牛肉 リブロース(赤肉)</option>
-      <option class="meat">輸入牛肉 サーロイン(脂身付き 生)</option>
-      <option class="meat">輸入牛肉 サーロイン(赤肉)</option>
-      <option class="meat">輸入牛肉 腿肉(脂身つき)</option>
-      <option class="meat">輸入牛肉 腿肉(赤肉)</option>
-      <option class="meat">輸入牛肉 外腿肉(脂身つき)</option>
-      <option class="meat">輸入牛肉 外腿肉(赤肉)</option>
-      <option class="meat">輸入牛肉 ランプ(脂身付き)</option>
-      <option class="meat">輸入牛肉 ランプ(赤肉)</option>
-      <option class="meat">輸入牛肉 ヒレ(赤肉)</option>
-      <option class="meat">子牛肉 リブロース</option>
-      <option class="meat">子牛肉 ばら</option>
-      <option class="meat">子牛肉 腿肉</option>
-      <option class="meat">ひき肉</option>
-      <option class="meat">舌 (タン)</option>
-      <option class="meat">心臓 (ハツ)</option>
-      <option class="meat">肝臓 (レバー)</option>
-      <option class="meat">じん臓 (マメ)</option>
-      <option class="meat">第一胃 (ミノ)</option>
-      <option class="meat">第二胃 (ハチノス)</option>
-      <option class="meat">第三胃 (センマイ)</option>
-      <option class="meat">第四胃 (ギアラ)</option>
-      <option class="meat">小腸 (ホルモン)</option>
-      <option class="meat">大腸 (テチャン)</option>
-      <option class="meat">直腸 (テッポウ)</option>
-      <option class="meat">横隔膜 (ハラミ)</option>
-      <option class="meat">ローストビーフ</option>
-      <option class="meat">コンビーフ缶詰</option>
-      <option class="meat">味付け缶詰</option>
-      <option class="meat">ビーフジャーキー</option>
-      <option class="meat">スモークタン</option>
-      <option class="meat">馬肉(赤肉)</option>
-      <option class="meat">鯨肉(赤肉)</option>
-      <option class="meat">赤鹿(赤肉)</option>
-      <option class="meat">日本鹿(赤肉)</option>
-      <option class="meat">日本鹿 蝦夷鹿(赤肉)</option>
-      <option class="meat">日本鹿 本州鹿・九州鹿(赤肉)</option>
-      <option class="meat">豚肉 ［大型種肉］ 肩ロース(脂身つき)</option>
-      <option class="meat">豚肉 ［大型種肉］ 肩ロース(赤肉)</option>
-      <option class="meat">豚肉 ［大型種肉］ ロース(赤肉)</option>
-      <option class="meat">豚肉 ［大型種肉］ ばら(脂身付き)</option>
-      <option class="meat">豚肉 ［大型種肉］ 腿肉(脂身つき)</option>
-      <option class="meat">豚肉 ［大型種肉］ 腿肉(赤肉)</option>
-      <option class="meat">豚肉 ［大型種肉］ 外腿肉(脂身つき)</option>
-      <option class="meat">豚肉 ［大型種肉］ 外腿肉(赤肉)</option>
-      <option class="meat">豚肉 ［大型種肉］ ヒレ(赤肉)</option>
-      <option class="meat">豚肉 ［中型種肉］ 肩ロース(脂身つき)</option>
-      <option class="meat">豚肉 ［中型種肉］ 肩ロース(赤肉)</option>
-      <option class="meat">豚肉 ［中型種肉］ ロース(赤肉)</option>
-      <option class="meat">豚肉 ［中型種肉］ ばら(脂身付き)</option>
-      <option class="meat">豚肉 ［中型種肉］ 腿肉(脂身つき)</option>
-      <option class="meat">豚肉 ［中型種肉］ 腿肉(赤肉)</option>
-      <option class="meat">豚肉 ［中型種肉］ 外腿肉(脂身つき)</option>
-      <option class="meat">豚肉 ［中型種肉］ 外腿肉(赤肉)</option>
-      <option class="meat">豚肉 ［中型種肉］ ヒレ(赤肉)</option>
-      <option class="meat">豚肉 ひき肉</option>
-      <option class="meat">豚肉 舌(タン)</option>
-      <option class="meat">豚肉 心臓(ハツ)</option>
-      <option class="meat">豚肉 肝臓(レバー)</option>
-      <option class="meat">豚肉 じん臓(マメ)</option>
-      <option class="meat">豚肉 胃(ガツ)</option>
-      <option class="meat">豚肉 小腸()</option>
-      <option class="meat">豚肉 大腸(シロコロ)</option>
-      <option class="meat">豚肉 子宮(コブクロ)</option>
-      <option class="meat">豚肉 軟骨</option>
-      <option class="meat">豚肉 骨付きハム</option>
-      <option class="meat">豚肉 ボンレスハム</option>
-      <option class="meat">豚肉 ロースハム</option>
-      <option class="meat">豚肉 ショルダーハム</option>
-      <option class="meat">豚肉 生ハム 促成</option>
-      <option class="meat">豚肉 生ハム 長期熟成</option>
-      <option class="meat">豚肉 プレスハム</option>
-      <option class="meat">豚肉 チョップドハム</option>
-      <option class="meat">豚肉 ばらベーコン</option>
-      <option class="meat">豚肉 ロースベーコン</option>
-      <option class="meat">豚肉 ショルダーベーコン</option>
-      <option class="meat">豚肉 ウインナーソーセージ</option>
-      <option class="meat">豚肉 セミドライソーセージ</option>
-      <option class="meat">豚肉 ドライソーセージ</option>
-      <option class="meat">豚肉 フランクフルトソーセージ</option>
-      <option class="meat">豚肉 ボロニアソーセージ</option>
-      <option class="meat">豚肉 リオナソーセージ</option>
-      <option class="meat">豚肉 レバーソーセージ</option>
-      <option class="meat">豚肉 混合ソーセージ</option>
-      <option class="meat">豚肉 生ソーセージ</option>
-      <option class="meat">豚肉 焼き豚</option>
-      <option class="meat">豚肉 レバーペースト</option>
-      <option class="meat">豚肉 スモークレバー</option>
-      <option class="meat">豚肉 ゼラチン</option>
-      <option class="meat">羊肉［マトン］ロース</option>
-      <option class="meat">羊肉［マトン］もも</option>
-      <option class="meat">羊肉［ラム］かた</option>
-      <option class="meat">羊肉［ラム］ロース</option>
-      <option class="meat">羊肉［ラム］もも</option>
-      <option class="meat">山羊肉</option>
-      <option class="meat">うずら肉</option>
-      <option class="meat">がちょう肉</option>
-      <option class="meat">まがも肉</option>
-      <option class="meat">あいがも肉</option>
-      <option class="meat">あひる 肉 </option>
-      <option class="meat">きじ肉</option>
-      <option class="meat">しちめんちょう肉</option>
-      <option class="meat">鶏肉［親］手羽 皮つき</option>
-      <option class="meat">鶏肉［親］むね 皮つき</option>
-      <option class="meat">鶏肉［親］むね 皮なし</option>
-      <option class="meat">鶏肉［親］もも 皮つき</option>
-      <option class="meat">鶏肉［親］もも 皮なし</option>
-      <option class="meat">鶏肉［親］ささみ</option>
-      <option class="meat">鶏肉［若どり］手羽 皮つき</option>
-      <option class="meat">鶏肉［若どり］手羽さき 皮つき</option>
-      <option class="meat">鶏肉［若どり］手羽もと 皮つき</option>
-      <option class="meat">鶏肉［若どり］むね 皮つき</option>
-      <option class="meat">鶏肉［若どり］むね 皮なし</option>
-      <option class="meat">鶏肉［若どり］もも 皮つき</option>
-      <option class="meat">鶏肉［若どり］もも 皮なし</option>
-      <option class="meat">鶏肉［若どり］ささみ</option>
-      <option class="meat">鶏肉［二次品目］ひき肉</option>
-      <option class="meat">鶏肉［副品目］心臓</option>
-      <option class="meat">鶏肉［副品目］肝臓</option>
-      <option class="meat">鶏肉［副品目］すなぎも</option>
-      <option class="meat">鶏肉［副品目］皮 むね</option>
-      <option class="meat">鶏肉［副品目］皮 もも</option>
-      <option class="meat">鶏肉［その他］焼き鳥缶詰</option>
-      <option class="meat">鶏肉［その他］チキンナゲット</option>
-      <option class="meat">鶏肉［その他］つくね</option>
-      <option class="meat">はと肉</option>
-      <option class="meat">ほろほろちょう肉</option>
-  
+        <%= render "meat" %>
+      <option class="seafood" id="">--魚介類--</option>
+        <%= render "seafood" %>
+      <option class="egg" id="">--卵類--</option>
+        <%= render "egg" %>
+      <option class="beans">--豆類--</option>
+        <%= render "beans" %>
+      <option class="milk">--乳類--</option>
+        <%= render "milk" %>
+      <option class="grain">--穀類--</option>
+        <%= render "grain" %>
+      <option class="potato">--芋類及び澱粉類--</option>
+        <%= render "potato" %>
+      <option class="fruit">--果実類--</option>
+        <%= render "fruit" %>
+      <option class="nuts">--種実類--</option>
+        <%= render "nuts" %>
+      <option class="mushroom">--キノコ類--</option>
+        <%= render "mushroom" %>
+      <option class="alga">--藻類--</option>
+        <%= render "alga" %>
+      <option class="vegetable">--野菜類--</option>
+        <%= render "vegetable" %>
+      <option class="oils">--油脂類--</option>
+        <%= render "oils" %>
+      <option class="sugar">--砂糖及び甘味類--</option>
+        <%= render "sugar" %>
+      <option class="pastry">--菓子類--</option>
+        <%= render "pastry" %>
+      <option class="drink">--嗜好飲料類--</option>
+        <%= render "drink" %>
+      <option class="seasoning">--調味料及び香辛料類--</option>
+        <%= render "seasoning" %>
+      <option class="off-the-shelf">--調理済み流通食品類--</option>
+        <%= render "off-the-shelf" %>
   </select>
 
 
-  
-  <select class="food-status" name="status_list">
-  
-    <option class="foods" selected="selected">--食材の状態--</option>
+  <button onclick="hoge();" type="button" class="btn-text">取得</button>
 
-        <option class="meat"id="4">生</option>
-
-
+<h2><span class="badge-primary">選択したテキスト</span></h2>
   
-  </select>
   <script>
     $(function(){
   //《selectタグ その①》路線を選択すると呼び出される関数
@@ -241,5 +83,19 @@
       }
   });
 });
+  </script>
+  <script>
+    function hoge() { 
+    
+    var obj = document.getElementById('food-select');
+    // 選択されている値の番号を取得
+    var idx = obj.selectedIndex;
+    // 値を取得
+    var txt  = obj.options[idx].text;
+    // 表示
+    document.getElementsByClassName('badge-primary')[0].textContent = txt;
+
+  }
+
   </script>
 </div>
