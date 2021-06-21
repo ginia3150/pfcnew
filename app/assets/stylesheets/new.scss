@@ -7,8 +7,12 @@ canvas { position: absolute; }
   display: inline;
   color: rgb(134, 214, 188);
 }
-.pulldown select {
-  
+
+.food {
+  background-color: rgba(114, 231, 192, 0.527);
+  width: 45vw;
+  padding: 1vh 2vw;
+  flex-direction: column;
 }
 .underlay-photo3 {
   animation: hue-rotate 6s infinite;
@@ -16,3 +20,5 @@ canvas { position: absolute; }
   background-size: cover;
   z-index: -1;
 }
+
+
