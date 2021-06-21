@@ -1,5 +1,12 @@
 canvas { position: absolute; }
 
+.pulldown {
+  margin-left: 0;
+  height: 25vh;
+  width: 30vw;
+  display: inline;
+  color: rgb(134, 214, 188);
+}
 
 .food {
   background-color: rgba(114, 231, 192, 0.527);

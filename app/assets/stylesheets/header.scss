@@ -179,13 +179,6 @@ body {
    font-size: 10px;
  }
 }
-
-@media (max-width: 500px) {
-  .menu {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		left: 70vw;
-		visibility: hidden;
-  }
+.pfc-icon {
+  width: 150px;
 }
