@@ -1,7 +1,54 @@
+
+
+
+
+
 <%= render "shared/header" %>
+<main>
+    <div class="basket">
+      <div class="basket-module">
+        <%= render "food" %>
+      </div>
+      <div class="basket-product">
+        
+        <div class="item">
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span> x Whistles</strong> Amella Lace Midi Dress</h1>
+            <p><strong>Navy, Size 10</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span>各種合計値</div>
+        <div class="summary-total">
+          <div class="total-title">P</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+          <div class="total-title">F</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+          <div class="total-title">C</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+          <div class="total-title">C</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
 
 
-<%= render "food" %>
+
+
+
+
+
+
+
+
 
 <script>
     $(function() {
