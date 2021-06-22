@@ -14,7 +14,11 @@ canvas { position: absolute; }
   z-index: -1;
 }
 
-
+.basket-product li {
+  display: list-item;  /* 縦に並べる */
+  list-style-type: none;
+  text-transform: uppercase;
+}
 
 .basket,
 .basket-module,
@@ -23,7 +27,6 @@ canvas { position: absolute; }
 .price,
 .quantity,
 .subtotal,
-.basket-product,
 .product-image,
 .product-details {
   float: left;
@@ -32,13 +35,19 @@ canvas { position: absolute; }
   display: none;
 }
 
+.view {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
+
 main {
   clear: both;
   font-size: 0.9rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 1rem 0;
-  width: 100vw;
+  height: 50vh;
   position: absolute;
   top: 140px;
   background-color: white;
@@ -135,11 +144,6 @@ label {
   box-sizing: border-box;
 }
 
-.basket-product {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem 0;
-  position: relative;
-}
 
 .product-image {
   width: 35%;
