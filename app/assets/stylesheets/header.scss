@@ -1,9 +1,6 @@
 
 header {
-	z-index: 1;
-}
-ol, ul {
-	list-style: none;
+	z-index: 10;
 }
 
 .cp_offcm01 {
@@ -24,8 +21,7 @@ ol, ul {
 	        transition: 0.53s transform;
 	-webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
 	        transition-timing-function: cubic-bezier(.38,.52,.23,.99);
-	background-color: #607D8B;
-	opacity: 0.8;
+					background: linear-gradient(180deg,rgb(254, 255, 223), rgba(254, 255, 223, 0.438));
 }
 .cp_offcm01 .cp_menu ul {
 	margin: 0;
@@ -38,8 +34,8 @@ ol, ul {
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	color: #ffffff;
-	border-bottom: 1px solid #ffffff;
+	color: #175f11;
+	border-bottom: 1px solid #175f11;
 }
 
 .cp_offcm01 #cp_toggle01 {
@@ -76,10 +72,13 @@ ol, ul {
 	content: '\f00d';
 }
 .nav {
-  width: 30vw;
+  width: 100vw;
   padding: 3vh 2vw;
   display: flex;
   flex-direction: column;
+	-webkit-clip-path: polygon(0 0, 83% 0, 58% 60%, 0 100%);
+	clip-path: polygon(0 0, 83% 0, 58% 60%, 0 100%);
+	background: linear-gradient(45deg,rgb(254, 255, 223), rgba(254, 255, 223, 0.212)) ;
 }
 .pfc-icon {
   width: 150px;

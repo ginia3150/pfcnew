@@ -1,13 +1,9 @@
 <div class="pulldown">
-
   <select class="mainselect" name="s1" id="s1">
     <option class="foods" selected="selected">--食材の種類--</option>
       <%= render "foods" %>
   </select>
-
-
-  
-  <select name="s2" id="s2">
+  <select  class="secondselect" name="s2" id="s2">
       <option class="foods">--食材選択--</option>
       <option class="meat" id="">--肉類--</option>
         <%= render "meat" %>
@@ -46,45 +42,25 @@
       <option class="off-the-shelf">--調理済み流通食品類--</option>
         <%= render "off-the-shelf" %>
   </select>
-
-
-  <button type="button" class="btn-text" id="btn" value="取得">取得</button>
-
-  
+  <div class="get-btn">
+    <button type="button" class="btn-text" id="btn" value="取得">取得</button>
+  </div>
   <script>
     $(function(){
-  //《selectタグ その①》路線を選択すると呼び出される関数
-  $('select[name="s1"]').change(function(){
-  //《selectタグ その①》nameの値を取得
-  var line_class = $('select[name="s1"] option:selected').attr("class");
-  console.log(line_class);
-　//《selectタグ その②》 子要素タグの個数を数え上げ
-  var count = $('select[name="s2"]').children().length;
-  console.log(count);
-  for(a=0; a<count; a++){
-        var s2 = $('select[name="s2"] option:eq('+a+')');
-　　　　　//《selectタグ その①》で選択した路線と等しいname値を持つoptionタグを表示
-        if(s2.attr("class") === line_class){
-          s2.show();
-        } else {
-          s2.hide();
-      }
-      }
-　　　　
-  });
-});
+      $('select[name="s1"]').change(function(){
+      var line_class = $('select[name="s1"] option:selected').attr("class");
+      console.log(line_class);
+      var count = $('select[name="s2"]').children().length;
+      console.log(count);
+      for(a=0; a<count; a++){
+          var s2 = $('select[name="s2"] option:eq('+a+')');
+          if(s2.attr("class") === line_class){
+            s2.show();
+          } else {
+            s2.hide();
+        }
+        }
+      });
+    });
   </script>
-
-<script>
-window.addEventListener('DOMContentLoaded', ()=>{
-  var protein = document.getElementById('s2').getAttribute('data-protein');
-  console.log(protein)
-  document.querySelector('#btn').addEventListener('click',()=>{
-    
-    view.innerHTML+=s2.value;
-    view.innerHTML+=protein;
-    
-  });
-});
-</script>
 </div>
