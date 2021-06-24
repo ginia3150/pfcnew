@@ -12,7 +12,6 @@
   border-radius: 20px;
 }
 
-
 p {
   border-radius: 6px; 
   padding: 15px; 
@@ -22,6 +21,7 @@ p {
   margin: 25px auto 10px; 
   width: auto; 
   background: linear-gradient(90deg, rgba(136, 214, 46, 0.801), rgba(239, 250, 142, 0.822));
+
 }
 .underlay-photo3 {
   animation: hue-rotate 6s infinite;
@@ -29,6 +29,7 @@ p {
   background-size: cover;
   z-index: -1;
 }
+
 main {
   font-size: 0.9rem;
   margin: 50px auto 80px;
