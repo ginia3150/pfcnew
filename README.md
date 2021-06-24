@@ -18,7 +18,8 @@
 # 実装予定の機能
 
 # データベース設計
-
+## 現在作成できているER図（今後変更、追加する可能性あり）
+<img width="761" alt="71e7107dc9fc8020516dac977a2527b8" src="https://user-images.githubusercontent.com/83645227/123307489-81b91f80-d55d-11eb-8d64-44940aa5605d.png">
 
 # テーブル設計
 
@@ -62,3 +63,5 @@
 ### Association
 
 - belongs_to :user
+
+# ローカルでの動作方法について
