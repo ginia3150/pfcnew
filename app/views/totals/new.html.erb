@@ -1,11 +1,37 @@
 <%= render "shared/header" %>
 
+<main>
+  <div class="basket">
+    <%= render "food" %>
+  </div>
+  <div class="food-table">
+    <table class="nutrition_facts">
+      <thead>
+      <tr>
+        <th class="name"><span>品名</span></th>
+        <th class="amount"><span>摂取量</span></th>
+        <th class="ingredients">エネルギー<small>kcal</small></th>
+        <th class="ingredients">たんぱく質<small>g</small></th>
+        <th class="ingredients">脂質<small>g</small></th>
+        <th class="ingredients">糖質<small>g</small></th>
+        <th class="ingredients">炭水化物<small>g</small></th>
+      </tr>
+      </thead>
+      <tfoot>
+      <tr>
+        <th colspan="2"><span>合計</span></th>
+        <td class="ingredients"><span>0</span></td>
+        <td class="ingredients"><span>0</span></td>
+        <td class="ingredients"><span>0</span></td>
+        <td class="ingredients"><span>0</span></td>
+        <td class="ingredients"><span>0</span></td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</main>
 
+<p>当ツールで利用している一般食品の成分値は、文部科学省 科学技術・学術審議会資源調査分科会報告書「日本食品標準成分表2020年版(八訂)」から引用しています</p>
 
-<%= render "food" %>
-
-
-    
-
-    <div class="underlay-photo3"></div>
-    <div class="underlay-black"></div>
+<div class="underlay-photo3"></div>
+<div class="underlay-black"></div>

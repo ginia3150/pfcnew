@@ -1,18 +1,27 @@
-canvas { position: absolute; }
-
-.pulldown {
-  margin-left: 0;
-  height: 25vh;
-  width: 30vw;
-  display: inline;
-  color: rgb(134, 214, 188);
+.mainselect, .secondselect {
+  height: 30px;
+  cursor: pointer;
+    transition: 250ms background ease-in;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(150deg, #e3fea5ee, #20e2b891 ) ;
+  border: 2px solid #3cdaab;
+  position: relative;
+  border-radius: 20px;
 }
 
-.food {
-  background-color: rgba(114, 231, 192, 0.527);
-  width: 45vw;
-  padding: 1vh 2vw;
-  flex-direction: column;
+p {
+  border-radius: 6px; 
+  padding: 15px; 
+  font-size: 0.857em; 
+  text-align: center; 
+  display: table; 
+  margin: 25px auto 10px; 
+  width: auto; 
+  background: linear-gradient(90deg, rgba(136, 214, 46, 0.801), rgba(239, 250, 142, 0.822));
+
 }
 .underlay-photo3 {
   animation: hue-rotate 6s infinite;
@@ -21,4 +30,99 @@ canvas { position: absolute; }
   z-index: -1;
 }
 
-
+main {
+  font-size: 0.9rem;
+  margin: 50px auto 80px;
+  width: 100vw;
+  padding: 20px 20px 0 20px;
+  height: 43vh;
+  background-color: rgba(235, 235, 235, 0.616);
+  text-align: center;
+}
+table.nutrition_facts {
+  border: 1px solid #3d3837;
+  border-right: 0;
+  border-collapse: separate;
+  table-layout: auto;
+  width: 100%;
+}
+table.nutrition_facts tr {
+	overflow:hidden;
+	height:4em;
+}
+table.nutrition_facts th,
+table.nutrition_facts td {
+	border: 1px solid #3d3837;
+	border-left-width: 0;
+	padding: 0;
+}
+table.nutrition_facts .amount span {
+display:inline-block;
+margin-top:1.5em;
+}
+table.nutrition_facts .name span {
+display:inline-block;
+margin-top:1.5em;
+}
+table.nutrition_facts .ingredients {
+	text-align: center;
+	min-width: 5em;
+}
+table.nutrition_facts .hidden {
+	display: none;
+}
+table.nutrition_facts thead th {
+	background: #504e4e;
+	border-bottom-width: 0;
+	border-top-width: 0;
+	color: #fff;
+	font-weight: normal;
+	padding: 0;
+	white-space: nowrap;
+}
+table.nutrition_facts thead .ingredients {
+	font-size: 12.5px;
+	padding: 5px 0 0 0;
+}
+table.nutrition_facts thead .ingredients small {
+	border-top: 1px solid #3d3837;
+	display: block;
+	font-size: 100%;
+	margin: 5px 0 0 0;
+	padding: 5px 0;
+	width: 100%;
+}
+table.nutrition_facts thead .ingredients small:before {
+	content: "(";
+}
+table.nutrition_facts thead .ingredients small:after {
+	content: ")";
+}
+table.nutrition_facts .name {
+  padding:0;
+  text-align: center;
+	width: 200px;
+}
+table.nutrition_facts .amount {
+  text-align: center;
+	width: 100px;
+}
+table.nutrition_facts tfoot tr {
+	background: #cfd4d0;
+	height:4em;
+}
+table.nutrition_facts tfoot td.ingredients {
+  font-size: 15px;
+  margin-top:20px;
+  padding: 20px 0 0 0;
+}
+table.nutrition_facts tfoot th {
+	padding:0;
+	text-align: center;
+  margin-top:20px;
+}
+table.nutrition_facts tfoot th span {
+	display:inline-block;
+	font-size: 1em;
+	margin-top:20px;
+}

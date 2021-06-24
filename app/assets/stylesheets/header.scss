@@ -1,28 +1,44 @@
-.pfc-icon {
-  width: 20vw;
-	margin: 2vw 2vh;
-	z-index: 1;
-}
-.pfc-icon2 {
-  width: 20vw;
+
+
+header {
+	z-index: 10;
 }
 
-$primary-color: #38c5b977;
-
-@mixin easeOut {
-  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+.cp_offcm01 {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: inline-block;
 }
+/* menu */
+.cp_offcm01 .cp_menu {
+	position: fixed;
+	top: 0;
+	right: -100vw;
+	width: 200px;
+	height: 100%;
+	cursor: pointer;
+	-webkit-transition: 0.53s transform;
+	        transition: 0.53s transform;
+	-webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+	        transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+					background: linear-gradient(180deg,rgb(254, 255, 223), rgba(254, 255, 223, 0.438));
 
-@mixin tablet {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
 }
 
 * {
   box-sizing: border-box;
 	padding: 0;
-	margin: 0;
+}
+.cp_offcm01 .cp_menu li {
+	list-style: none;
+}
+.cp_offcm01 .cp_menu li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #175f11;
+	border-bottom: 1px solid #175f11;
 }
 
 body {
@@ -156,28 +172,15 @@ body {
     }
   }
 }
+.nav {
+  width: 100vw;
+  padding: 3vh 2vw;
+  display: flex;
+  flex-direction: column;
+	-webkit-clip-path: polygon(0 0, 83% 0, 58% 60%, 0 100%);
+	clip-path: polygon(0 0, 83% 0, 58% 60%, 0 100%);
+	background: linear-gradient(45deg,rgb(254, 255, 223), rgba(254, 255, 223, 0.212)) ;
 
-// responsive tablet view
-@include tablet {
- ul.menu__list,
- div {
-  float: none;
-  width: 100%;
-  min-height: 0;
-
-   &--active {
-     transform: translate3d(0, 0, 0);
-   }
- }
-
- .menu__list {
-   height: 60vh;
-   transform: translate3d(-100%, 0, 0);
- }
-
- .menu__link {
-   font-size: 10px;
- }
 }
 .pfc-icon {
   width: 150px;

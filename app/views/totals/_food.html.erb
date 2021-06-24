@@ -1,14 +1,10 @@
 <div class="pulldown">
-
-  <select class="mainselect" name="major_list">
+  <select class="mainselect" name="s1" id="s1">
     <option class="foods" selected="selected">--食材の種類--</option>
       <%= render "foods" %>
   </select>
-
-
-  
-  <select name="food_list" id="food-select">
-    <option class="foods" selected="food-selected">--食材選択--</option>
+  <select  class="secondselect" name="s2" id="s2">
+      <option class="foods">--食材選択--</option>
       <option class="meat" id="">--肉類--</option>
         <%= render "meat" %>
       <option class="seafood" id="">--魚介類--</option>
@@ -46,56 +42,25 @@
       <option class="off-the-shelf">--調理済み流通食品類--</option>
         <%= render "off-the-shelf" %>
   </select>
-
-
-  <button onclick="hoge();" type="button" class="btn-text">取得</button>
-
-<h2><span class="badge-primary">選択したテキスト</span></h2>
-  
+  <div class="get-btn">
+    <button type="button" class="btn-text" id="btn" value="取得">取得</button>
+  </div>
   <script>
     $(function(){
-  //《selectタグ その①》路線を選択すると呼び出される関数
-  $('select[name="major_list"]').change(function(){
-  //《selectタグ その①》nameの値を取得
-  var line_class = $('select[name="major_list"] option:selected').attr("class");
-  console.log(line_class);
-　//《selectタグ その②》 子要素タグの個数を数え上げ
-  var count = $('select[name="food_list"]').children().length;
-  console.log(count);
-  for(a=0; a<count; a++){
-        var food_list = $('select[name="food_list"] option:eq('+a+')');
-　　　　　//《selectタグ その①》で選択した路線と等しいname値を持つoptionタグを表示
-        if(food_list.attr("class") === line_class){
-          food_list.show();
-        } else {
-          food_list.hide();
-      }
-      }
-　　　　//《selectタグ その③》 子要素タグの個数を数え上げ
-      for(b=0; b<count; b++){
-        var status_list = $('select[name="status_list"] option:eq('+b+')');
-　　　　　//《selectタグ その②》で選択した駅と等しいname値を持つoptionタグを表示
-        if(status_list.attr("class") === line_class){
-          status_list.show();
-        } else {
-          status_list.hide();
-      }
-      }
-  });
-});
-  </script>
-  <script>
-    function hoge() { 
-    
-    var obj = document.getElementById('food-select');
-    // 選択されている値の番号を取得
-    var idx = obj.selectedIndex;
-    // 値を取得
-    var txt  = obj.options[idx].text;
-    // 表示
-    document.getElementsByClassName('badge-primary')[0].textContent = txt;
-
-  }
-
+      $('select[name="s1"]').change(function(){
+      var line_class = $('select[name="s1"] option:selected').attr("class");
+      console.log(line_class);
+      var count = $('select[name="s2"]').children().length;
+      console.log(count);
+      for(a=0; a<count; a++){
+          var s2 = $('select[name="s2"] option:eq('+a+')');
+          if(s2.attr("class") === line_class){
+            s2.show();
+          } else {
+            s2.hide();
+        }
+        }
+      });
+    });
   </script>
 </div>
