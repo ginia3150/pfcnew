@@ -108,13 +108,11 @@ input {
 .underlay-photo {
   background-image: url('yasai.png');
   background-size: cover;
-  z-index: -1;
+  z-index: -5;
 }
 .underlay-black {
-
   background: rgba(44, 44, 44, 0.418);
-
-  z-index: -1;
+  z-index: -5;
 }
 
 @media (max-width: 1208px) {

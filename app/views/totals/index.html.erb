@@ -1,6 +1,63 @@
 <%= render "shared/header" %>
 
-<div class="hero" id='account-page'>
-    <div class="underlay-photo2"></div>
-    <div class="underlay-black"></div>
+<div class="parent">
+  <div class="div1">
+    <%= image_tag 'eat.png', class: "animate__animated animate__fadeInTopLeft", data_animate: "eat" %>
+  </div>
+  <div class="div2">
+  <h2 class="animate__animated animate__fadeIn">その日食べたものはなんですか？</h2>
+  <p class="animate__animated animate__fadeIn">
+    一回一回の食事の栄養素気になりませんか？<br>片寄はないかなども気になりますよね？
+    <br>でも計算するのが面倒くさいですよね。
+    </p>
+  </div>
+  <div class="div3">
+  <h2 class="animate__animated animate__fadeIn animate__delay-1s">覚えているうちにサクっと入力しよう！</h2>
+  <p class="animate__animated animate__fadeIn animate__delay-1s">
+    覚えておくのは食べたものと、大体の量。<br>
+    登録してある品目からリストアップ！
+  </p>
+  </div>
+  <div class="div4"><%= image_tag 'input.png', class: "animate__animated animate__fadeInTopRight animate__delay-1s", data_animate: "input" %></div>
+  <div class="div5"><%= image_tag 'kekka.png', class: "animate__animated animate__fadeInTopLeft animate__delay-2s", data_animate: "kekka" %></div>
+  <div class="div6">
+    <h2 class="animate__animated animate__fadeIn animate__delay-2s">面倒な計算操作がなくてステレスフリー！</h2>
+    <p class="animate__animated animate__fadeIn animate__delay-2s">
+    その場で結果がすぐわかる！<br>
+    健康が気になるそんなあなたにオススメしたい！
+    </p>
+  </div>
 </div>
+
+<div class="hero" id='account-page'>
+  <div class="underlay-photo2"></div>
+  <div class="underlay-black"></div>
+</div>
+
+<script>
+
+$(window).on('load scroll', function(){
+
+  //animatedのclassを持った要素をセレクタに指定
+  var elem = $('.animate__animated');
+
+  elem.each(function () {
+
+    //data属性からアニメーション名を取得
+    var isAnimate = $(this).data('animate');
+    //animated要素に位置を取得
+    var elemOffset = $(this).offset().top;
+    //現在のスクロールポジションを取得
+    var scrollPos = $(window).scrollTop();
+    //ウィンドウの高さを取得
+    var wh = $(window).height();
+
+    //animated要素がウィンドウ内の中央位置にきたら処理
+    if(scrollPos > elemOffset - wh + (wh / 2)){
+      $(this).addClass(isAnimate);
+    }
+  });
+
+});
+
+</script>

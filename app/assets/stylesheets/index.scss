@@ -1,7 +1,42 @@
-canvas { position: absolute; }
 .underlay-photo2 {
   animation: hue-rotate 6s infinite;
   background-image: url('yasai2.png');
   background-size: cover;
-  z-index: -1;
+  z-index: -5;
 }
+.parent {
+  width: 92.5vw;
+  margin: 5rem auto 3rem;
+  display: grid;
+  gap: 3vw;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: 30vw 30vw 30vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  }
+  .animate__fadeInTopLeft, .animate__fadeInTopRight {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  h2{
+    font-size: 25px;color: rgb(61, 58, 25);
+    margin: 10px 0 20px 10px;
+  }
+  p {
+    font-size: 15px;color: rgb(250, 246, 194);
+    margin: 80px 0 20px 15px;;
+  }
+
+  .div2, .div3, .div6 {
+    background-color: rgba(182, 101, 69, 0.801);
+  }
+
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 4; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 2 / 3 / 3 / 4; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 4; }
