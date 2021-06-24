@@ -1,0 +1,66 @@
+<div class="pulldown">
+  <select class="mainselect" name="s1" id="s1">
+    <option class="foods" selected="selected">--食材の種類--</option>
+      <%= render "foods" %>
+  </select>
+  <select  class="secondselect" name="s2" id="s2">
+      <option class="foods">--食材選択--</option>
+      <option class="meat" id="">--肉類--</option>
+        <%= render "meat" %>
+      <option class="seafood" id="">--魚介類--</option>
+        <%= render "seafood" %>
+      <option class="egg" id="">--卵類--</option>
+        <%= render "egg" %>
+      <option class="beans">--豆類--</option>
+        <%= render "beans" %>
+      <option class="milk">--乳類--</option>
+        <%= render "milk" %>
+      <option class="grain">--穀類--</option>
+        <%= render "grain" %>
+      <option class="potato">--芋類及び澱粉類--</option>
+        <%= render "potato" %>
+      <option class="fruit">--果実類--</option>
+        <%= render "fruit" %>
+      <option class="nuts">--種実類--</option>
+        <%= render "nuts" %>
+      <option class="mushroom">--キノコ類--</option>
+        <%= render "mushroom" %>
+      <option class="alga">--藻類--</option>
+        <%= render "alga" %>
+      <option class="vegetable">--野菜類--</option>
+        <%= render "vegetable" %>
+      <option class="oils">--油脂類--</option>
+        <%= render "oils" %>
+      <option class="sugar">--砂糖及び甘味類--</option>
+        <%= render "sugar" %>
+      <option class="pastry">--菓子類--</option>
+        <%= render "pastry" %>
+      <option class="drink">--嗜好飲料類--</option>
+        <%= render "drink" %>
+      <option class="seasoning">--調味料及び香辛料類--</option>
+        <%= render "seasoning" %>
+      <option class="off-the-shelf">--調理済み流通食品類--</option>
+        <%= render "off-the-shelf" %>
+  </select>
+  <div class="get-btn">
+    <button type="button" class="btn-text" id="btn" value="取得">取得</button>
+  </div>
+  <script>
+    $(function(){
+      $('select[name="s1"]').change(function(){
+      var line_class = $('select[name="s1"] option:selected').attr("class");
+      console.log(line_class);
+      var count = $('select[name="s2"]').children().length;
+      console.log(count);
+      for(a=0; a<count; a++){
+          var s2 = $('select[name="s2"] option:eq('+a+')');
+          if(s2.attr("class") === line_class){
+            s2.show();
+          } else {
+            s2.hide();
+        }
+        }
+      });
+    });
+  </script>
+</div>

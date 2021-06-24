@@ -1,25 +1,80 @@
 <header>
+  
+  <div class="burger">
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+  </div>
   <div class='nav'>
     <%= link_to image_tag("logo_transparent.png", class:"pfc-icon"), root_path %>
   </div>
-  <div class="cp_cont">
-  	<div class="cp_offcm01">
-  		<input type="checkbox" id="cp_toggle01">
-  		<label for="cp_toggle01"><span></span></label>
-  		<div class="cp_menu">
-  		  <ul>
-  		  <li><%= link_to image_tag("logo_transparent.png", class:"pfc-icon"), root_path %></a></li>
-        <li><a href="#">PFC計算</a></li>
-  		  <li><a href="#">商品追加依頼</a></li>
-  		  <% if user_signed_in? %>
-          <li><%= link_to current_user.n_name, "#", class: "user-nickname" %></li>
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "user-nickname" %></li>
+  <nav class="menu">
+    <div class="menu__brand">
+    <ul class="menu__list">
+      <li><%= link_to image_tag("logo_transparent.png", class:"pfc-icon2"), root_path %></li>
+      <li class="menu__item"><a href="" class="menu__link">食材追加依頼</a></li>
+      <li class="menu__item"><%= link_to 'PFC計算', new_total_path, class: "menu__link" %></li>
+      <% if user_signed_in? %>
+          <li class="menu__item"><%= link_to current_user.n_name, "#", class: "menu__link" %></li>
+          <li class="menu__item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "menu__link" %></li>
         <% else %>
-          <li><%= link_to 'ログイン', new_user_session_path, class: "user-nickname" %></li>
-          <li><%= link_to '新規登録', new_user_registration_path, class: "user-nickname" %></li>
+          <li class="menu__item"><%= link_to 'ログイン', new_user_session_path, class: "menu__link" %></li>
+          <li class="menu__item"><%= link_to '新規登録', new_user_registration_path, class: "menu__link" %></li>
         <% end %>
-  		  </ul>
-  		</div>
-  	</div>
-  </div>
+    </ul>
+  </nav>
 </header>
+<script>
+  (function() {
+  
+  var Menu = (function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('.menu');
+    var menuList = document.querySelector('.menu__list');
+
+    var menuItems = document.querySelectorAll('.menu__item');
+    
+    var active = false;
+    
+    var toggleMenu = function() {
+      if (!active) {
+        menu.classList.add('menu--active');
+        menuList.classList.add('menu__list--active');
+
+        burger.classList.add('burger--close');
+        for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].classList.add('menu__item--active');
+        }
+        
+        active = true;
+      } else {
+        menu.classList.remove('menu--active');
+        menuList.classList.remove('menu__list--active');
+
+        burger.classList.remove('burger--close');
+        for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].classList.remove('menu__item--active');
+        }
+        
+        active = false;
+      }
+    };
+    
+    var bindActions = function() {
+      burger.addEventListener('click', toggleMenu, false);
+    };
+    
+    var init = function() {
+      bindActions();
+    };
+    
+    return {
+      init: init
+    };
+    
+  }());
+  
+  Menu.init();
+  
+  }());
+</script>
