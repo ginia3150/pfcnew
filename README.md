@@ -35,7 +35,7 @@
 ![1ace75f8560048eeb878ac9eb0d1a84f](https://user-images.githubusercontent.com/83645227/123314906-17f14380-d566-11eb-9a53-5242074bfa3f.gif)
 
 
-・viewに動きをつけて派手さを演出しています。
+### ・viewに動きをつけて演出しています。
 ![b287c9756e4aa73f5bda05099c7eef74](https://user-images.githubusercontent.com/83645227/123314928-1de72480-d566-11eb-94f7-4964f0cf68a9.gif)
 
 
