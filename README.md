@@ -1,9 +1,9 @@
 # アプリケーション名
-## pfcバランス
+### pfcバランス
 
 # アプリケーションの概要
 # herokuURL
-## https://pfcnew.herokuapp.com/ 
+### https://pfcnew.herokuapp.com/ 
 
 # Basic認証のPASS
 
