@@ -1,27 +1,8 @@
 .mainselect, .secondselect {
   height: 30px;
-  cursor: pointer;
-    transition: 250ms background ease-in;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
   background-image: linear-gradient(150deg, #e3fea5ee, #20e2b891 ) ;
-  border: 2px solid #3cdaab;
-  position: relative;
+  border: 2px solid #82ddc2da;
   border-radius: 20px;
-}
-
-p {
-  border-radius: 6px; 
-  padding: 15px; 
-  font-size: 0.857em; 
-  text-align: center; 
-  display: table; 
-  margin: 25px auto 10px; 
-  width: auto; 
-  background: linear-gradient(90deg, rgba(136, 214, 46, 0.801), rgba(239, 250, 142, 0.822));
-
 }
 .underlay-photo3 {
   animation: hue-rotate 6s infinite;
@@ -36,7 +17,7 @@ main {
   width: 100vw;
   padding: 20px 20px 0 20px;
   height: 43vh;
-  background-color: rgba(235, 235, 235, 0.616);
+  background-color: rgba(235, 235, 235, 0.349);
   text-align: center;
 }
 table.nutrition_facts {
