@@ -31,11 +31,13 @@
 ### ・現在可能な実装機能はユーザー管理と新規登録・ログイン・ログアウトのみとなっています。
 ・新規登録画面での挙号になります。
 　　（ここで身長・体重・年齢を選択してもらい、それを元に平均栄養値を算出する予定）
-<a href="https://gyazo.com/6374231dc27e8b3d5070893d0c22f4d4"><video alt="Video from Gyazo" width="830" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/6374231dc27e8b3d5070893d0c22f4d4.mp4" type="video/mp4" /></video></a>
-<a href="https://gyazo.com/1ace75f8560048eeb878ac9eb0d1a84f"><img src="https://i.gyazo.com/1ace75f8560048eeb878ac9eb0d1a84f.gif" alt="Image from Gyazo" width="826"/></a>
+![6374231dc27e8b3d5070893d0c22f4d4](https://user-images.githubusercontent.com/83645227/123314867-0f990880-d566-11eb-9b45-ade3b6781f7a.gif)
+![1ace75f8560048eeb878ac9eb0d1a84f](https://user-images.githubusercontent.com/83645227/123314906-17f14380-d566-11eb-9a53-5242074bfa3f.gif)
+
 
 ・viewに動きをつけて派手さを演出しています。
-<a href="https://gyazo.com/b287c9756e4aa73f5bda05099c7eef74"><img src="https://i.gyazo.com/b287c9756e4aa73f5bda05099c7eef74.gif" alt="Image from Gyazo" width="818"/></a>
+![b287c9756e4aa73f5bda05099c7eef74](https://user-images.githubusercontent.com/83645227/123314928-1de72480-d566-11eb-94f7-4964f0cf68a9.gif)
+
 
 # 実装予定の機能
 ・栄養素の自動計算機能
