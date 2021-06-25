@@ -5,14 +5,18 @@
   z-index: -5;
 }
 .parent {
-  width: 92.5vw;
-  margin: 5rem auto 3rem;
+
+  margin: 50px auto 80px;
+  width: 100vw;
+  padding: 20px 20px 20px 15px;
   display: grid;
   gap: 3vw;
-  grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 30vw 30vw 30vw;
+  grid-template-columns: 31.5vw 31.5vw 31.5vw;
+  grid-template-rows: 31.5vw 31.5vw 31.5vw;
   grid-column-gap: 10px;
   grid-row-gap: 25px;
+  position: absolute;
+  z-index: -1;
   }
   .animate__fadeInTopLeft, .animate__fadeInTopRight {
     width: 100%;
@@ -27,6 +31,11 @@
   p {
     font-size: 15px;color: rgb(250, 246, 194);
     margin: auto 10px 20px 15px;
+  }
+
+  body {
+    margin: 0;
+    position: relative;
   }
 
   .div2, .div3, .div6 {
