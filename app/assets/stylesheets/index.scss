@@ -38,10 +38,20 @@
     position: relative;
   }
 
-  .div2, .div3, .div6 {
+  .div2, .div6 {
     background-color: rgba(182, 101, 69, 0.801);
     margin: auto;
+    padding: 60px 10px 60px 70px ;
+    clip-path: polygon(30% 0, 30% 20%, 100% 20%, 100% 80%, 30% 80%, 30% 100%, 0% 50%);
   }
+  .div3 {
+    background-color: rgba(182, 101, 69, 0.801);
+    margin: auto;
+    padding: 60px 70px 60px 10px ;
+    clip-path: polygon(0% 20%, 70% 20%, 70% 0, 100% 50%, 70% 100%, 70% 80%, 0% 80%);
+  }
+
+
 
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
