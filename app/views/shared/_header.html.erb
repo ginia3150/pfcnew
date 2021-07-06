@@ -11,7 +11,7 @@
         <li><%= link_to 'PFC計算', new_total_path, class: "menu__link" %></li>
         <li><a href="" class="menu__link">食材追加依頼</a></li>
         <% if user_signed_in? %>
-            <li><%= link_to current_user.n_name, "#", class: "menu__link" %></li>
+            <li><%= link_to current_user.n_name, root_path, class: "menu__link" %></li>
             <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "menu__link" %></li>
           <% else %>
             <li><%= link_to 'ログイン', new_user_session_path, class: "menu__link" %></li>
