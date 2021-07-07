@@ -92,6 +92,3 @@
 ### Association
 
 - belongs_to :user
-
-# ローカルでの動作方法について
-
