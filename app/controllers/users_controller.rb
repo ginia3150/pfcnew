@@ -10,10 +10,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = current_user
+  end
+
   private
 
   def user_params
-    params.require(:user).permit(:n_name, :email, :height, :weight, :age)
+    params.require(:user).permit(:n_name, :email, :height, :weight, :age_id)
   end
 
 end
